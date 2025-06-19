@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title">
+                <a href="index.html">Вернуться к меню</a>
+            </div>
+        </header>
+        
+        <div class="checkout-page">
+            <h1>Оформление заказа</h1>
+            
+            <div class="checkout-content">
+                <div class="order-summary">
+                    <h2>Ваш заказ</h2>
+                    <div class="order-items" id="orderItems"></div>
+                    <div class="order-total" id="orderTotal"></div>
+                </div>
+                <div class="checkout-form">
+                    <h2>Контактные данные</h2>
+                    <form id="checkoutForm">
+                        <div class="form-group">
+                            <label for="name">ФИО*</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон*</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Адрес доставки*</label>
+                            <textarea id="address" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="order-btn">Заказать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
